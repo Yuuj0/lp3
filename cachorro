@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adote Já</title>
+
+<style>
+body {
+    margin: 0;
+    background-color: #d8c5b4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #c88400;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background: #e5d2c2;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* CONTEÚDO */
+.container {
+    margin-top: 100px; /* espaço do header */
+    display: flex;
+   margin-left: 100px;
+}
+
+.card-animal {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+   
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 100px;
+    
+}
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background: #c88400;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+.descrição
+{
+    margin-left: 100px;
+    flex-direction: column;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo"></div>
+    <h1>Acolha</h1>
+</header>
+
+<div class="container">
+    <div class="card-animal">
+
+        <div class="imagem">
+            <img src="data:image/jpeg;base64,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">
+        </div>
+
+        <div class="info">
+            <p>Nome: Oi posso falar</p>
+            <p>Idade: Desconhecida</p>
+            <p>Raça: Pode falar?</p>
+            <p>Comportamento: Pergunta se pode falar</p>
+
+            <div class="botoes">
+                <button>Adotar</button>
+                <button>Conversar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="descrição">
+    <p>descrição:</p>
+    <p>Ele pergunta se pode falar</p>
+    <p>Inocente</p>
+    <p>Oi</p>
+    <p>Não se conhece</p>
+</div>
+
+</body>
+</html>
